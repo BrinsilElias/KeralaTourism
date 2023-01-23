@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./styles/home.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Kerala Tourism Home</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <nav class="container flex-group">
+            <p class="logo">KeralaTourism.com</p>
+            
+            <div class="nav-items flex-group">
+                <a class="active" href="#">Home</a>
+                <a href="./pages/stays.html">Stays</a>
+                <a href="./pages/places.html">Places</a>
+            </div>
+
+            <div class="btn-group">
+                <a class="btn" href="./pages/signup.html">Sign Up</a>
+                <a class="btn btn-primary" href="./pages/login.html">Log In</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <main>
+        <!-- Hero Section -->
+            <div class="hero__section">
+                <div class="hero__section-wrapper container">
+                    <!-- Text -->
+                    <div class="frosted-glass" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <h1 class="hero__section-title">Discover the <span style="color: var(--clr-background-100);">magic of Kerala</span> - God's own country</h1>
+                        <p class="hero__section-body">Explore and experience the unique charm of Kerala, from its lush landscapes and serene beaches to its vibrant traditions.</p>
+                        <div class="scroll-down">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                                </svg>
+                        </div>
+                    </div>
+                    <!-- Text -->
+                </div>
+                <!-- Search Box -->
+                <div class="search__box container">
+                    <div class="search__box-head">
+                        <div class="filter">
+                            <p class="active" style="font-size: 0.9rem;">Stays</p>
+                            <p style="font-size: 0.9rem;">Flights</p>
+                            <p style="font-size: 0.9rem;">Cars</p>
+                            <p style="font-size: 0.9rem;">Things to do</p>
+                        </div>
+                        <button class="btn btn-primary" type="button">Find Stays</button>
+                    </div>
+                    <div class="search__box-body">
+                        <div class="search-ctn">
+                            <input type="text" placeholder="Destination">
+                            <div class="value">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                      </svg>
+                                </div>
+                                <p style="font-size: 0.9rem;">Cherthala - Alappuzha</p>
+                            </div>
+                        </div>
+            
+                        <div class="search-ctn">
+                            <input type="text" placeholder="Passengers">
+                            <div class="value">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                      </svg>
+                                </div>
+                                <p style="font-size: 0.9rem;">2 - Adults 3 - Children</p>
+                            </div>
+                        </div>
+            
+                        <div class="search-ctn">
+                            <input type="text" placeholder="Check In">
+                            <div class="value">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                                      </svg>
+                                </div>
+                                <p style="font-size: 0.9rem;">Tues, 09 Aug 2022</p>
+                            </div>
+                        </div>
+            
+                        <div class="search-ctn">
+                            <input type="text" placeholder="Check Out">
+                            <div class="value">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                      </svg>
+                                </div>
+                                <p style="font-size: 0.9rem;">Wed, 10 Aug 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Hero Section -->
+
+        <!-- Top Destination -->
+        <div class="top__destinations">
+            <div class="container">
+                <div class="top__destinations-text">
+                    <h2 class="top__destinations-title">TRENDING</h2>
+                    <h3 class="top__destinations-subtitle">Top Destinations to Visit</h3>
+                    <p class="top__destinations-body">All these destinations offer unique experiences and are <br>perfect for nature lovers and adventure seekers.</p>
+                </div>
+                <div class="top__destinations-images flex-group">
+                    <div class="top__destinations-cards" style="text-align: center;">
+                        <div class="top__destinations-card-image" style="background-image: url('./images/Destinations/Munnar.jpg');"></div>
+                        <h4 class="card-title">Munnar</h4>
+                        <p style="color: var(--clr-neutral-700); font-size: 0.9rem;">Idukki</p>
+                    </div>
+                    <div class="top__destinations-cards" style="text-align: center;">
+                        <div class="top__destinations-card-image" style="background-image: url('./images/Destinations/Caves.jpg');"></div>
+                        <h4 class="card-title">Edakkal Caves</h4>
+                        <p style="color: var(--clr-neutral-700); font-size: 0.9rem;">Wayannad</p>
+                    </div>
+                    <div class="top__destinations-cards" style="text-align: center;">
+                        <div class="top__destinations-card-image" style="background-image: url('./images/Destinations/Kutannad.jpg');"></div>
+                        <h4 class="card-title">Kuttanad</h4>
+                        <p style="color: var(--clr-neutral-700); font-size: 0.9rem;">Alappuzha</p>
+                    </div>
+                    <div class="top__destinations-cards" style="text-align: center;">
+                        <div class="top__destinations-card-image" style="background-image: url('./images/Destinations/Varkala.jpg');"></div>
+                        <h4 class="card-title">Varkala</h4>
+                        <p style="color: var(--clr-neutral-700); font-size: 0.9rem;">Thiruvananthapuram</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Destinations -->
+
+        <!-- Staycation -->
+        <div class="staycation">
+            <div class="container">
+                <div class="staycation-text">
+                    <h2>STAYCATION</h2>
+                    <h3>An Ideal Staycation</h3>
+                    <p>You can stay anywhere, anytime in the best places this year</p>
+                </div>
+                
+                <div class="staycation-filter flex-group">
+                    <div class="flex-group" style="gap: 1rem;">
+                        <button class="btn btn-primary" type="button" style="font-size: 0.9rem;">Cabins</button>
+                        <button class="btn" type="button" style="font-size: 0.9rem; color: var(--clr-neutral-700);">Hotels</button>
+                        <button class="btn" type="button" style="font-size: 0.9rem; color: var(--clr-neutral-700);">Apartments</button>
+                        <button class="btn" type="button" style="font-size: 0.9rem; color: var(--clr-neutral-700);">Shared homes</button>
+                    </div>
+                    <div>
+                        <button class="btn" type="button" style="font-size: 0.9rem;">Filter</button>
+                    </div>
+                </div>
+
+                <div class="staycation-cards flex-group">
+                    <div class="product__card">
+                        <div class="product__card-img" style="background-image: url('../images/Stays/stay1.webp');">
+                        </div>
+                        <div class="product__card-body">
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-title">Cottage in Cherthala</p>
+                                <p class="distance">976km</p>
+                            </div>
+                            <div class="tag-group">
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">guests</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">beds</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">bathroom</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">breakfast</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">24h</p>
+                                    <p class="tag-text">free wifi</p>
+                                </div>
+                            </div>
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-price">₹5000 /night</p>
+                                <div class="flex-group" style="gap: 0.5rem; align-items: center;">
+                                    <div class="rating-icon flex-group">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg>
+                                    </div>                     
+                                    <p class="rating">4.78</p>  
+                                    <p class="review">(32 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Product Card 1 -->
+
+                    <div class="product__card">
+                        <div class="product__card-img" style="background-image: url('../images/Stays/Stay2.webp');">
+                        </div>
+                        <div class="product__card-body">
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-title">Home in Vypin</p>
+                                <p class="distance">976km</p>
+                            </div>
+                            <div class="tag-group">
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">guests</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">beds</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">bathroom</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">breakfast</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">24h</p>
+                                    <p class="tag-text">free wifi</p>
+                                </div>
+                            </div>
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-price">₹5000 /night</p>
+                                <div class="flex-group" style="gap: 0.5rem; align-items: center;">
+                                    <div class="rating-icon flex-group">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg>
+                                    </div>                     
+                                    <p class="rating">4.78</p>  
+                                    <p class="review">(32 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Product Card 2 -->
+
+                    <div class="product__card">
+                        <div class="product__card-img" style="background-image: url('../images/Stays/Stay3.webp');">
+                        </div>
+                        <div class="product__card-body">
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-title">Home in Ernakulam</p>
+                                <p class="distance">976km</p>
+                            </div>
+                            <div class="tag-group">
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">guests</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">beds</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">bathroom</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">breakfast</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">24h</p>
+                                    <p class="tag-text">free wifi</p>
+                                </div>
+                            </div>
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-price">₹5000 /night</p>
+                                <div class="flex-group" style="gap: 0.5rem; align-items: center;">
+                                    <div class="rating-icon flex-group">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg>
+                                    </div>                     
+                                    <p class="rating">4.78</p>  
+                                    <p class="review">(32 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Product Card 3 -->
+
+                    <div class="product__card">
+                        <div class="product__card-img" style="background-image: url('../images/Stays/Stay4.webp');">
+                        </div>
+                        <div class="product__card-body">
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-title">Private room in Varkala</p>
+                                <p class="distance">976km</p>
+                            </div>
+                            <div class="tag-group">
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">guests</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">beds</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">bathroom</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">breakfast</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">24h</p>
+                                    <p class="tag-text">free wifi</p>
+                                </div>
+                            </div>
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-price">₹5000 /night</p>
+                                <div class="flex-group" style="gap: 0.5rem; align-items: center;">
+                                    <div class="rating-icon flex-group">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg>
+                                    </div>                     
+                                    <p class="rating">4.78</p>  
+                                    <p class="review">(32 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Product Card 4 -->
+
+                    <div class="product__card">
+                        <div class="product__card-img" style="background-image: url('../images/Stays/Stay5.webp');">
+                        </div>
+                        <div class="product__card-body">
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-title">Farm stay in Kottayam</p>
+                                <p class="distance">976km</p>
+                            </div>
+                            <div class="tag-group">
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">guests</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">beds</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">bathroom</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">breakfast</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">24h</p>
+                                    <p class="tag-text">free wifi</p>
+                                </div>
+                            </div>
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-price">₹5000 /night</p>
+                                <div class="flex-group" style="gap: 0.5rem; align-items: center;">
+                                    <div class="rating-icon flex-group">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg>
+                                    </div>                     
+                                    <p class="rating">4.78</p>  
+                                    <p class="review">(32 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Product Card 5 -->
+
+                    <div class="product__card">
+                        <div class="product__card-img" style="background-image: url('../images/Stays/Stay6.webp');">
+                        </div>
+                        <div class="product__card-body">
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-title">Villa in Kochi</p>
+                                <p class="distance">976km</p>
+                            </div>
+                            <div class="tag-group">
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">guests</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">2</p>
+                                    <p class="tag-text">beds</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">bathroom</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">1</p>
+                                    <p class="tag-text">breakfast</p>
+                                </div>
+                                <div class="tag">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                    </svg>
+                                    <p class="tag-number">24h</p>
+                                    <p class="tag-text">free wifi</p>
+                                </div>
+                            </div>
+                            <div class="flex-group" style="justify-content: space-between; align-items: center;">
+                                <p class="card-price">₹5000 /night</p>
+                                <div class="flex-group" style="gap: 0.5rem; align-items: center;">
+                                    <div class="rating-icon flex-group">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg>
+                                    </div>                     
+                                    <p class="rating">4.78</p>  
+                                    <p class="review">(32 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Product Card 6 -->
+                </div>
+
+            </div>
+        </div>
+        <!-- Staycation -->
+        
+        <!-- Events -->
+        <div class="events">
+            <div class="container">
+                <div class="events-text">
+                    <h2>EVENTS</h2>
+                    <h3>Events of the Day</h3>
+                    <p>Find an iteresting event for you and your family to <br>enjoy, the events that we have prepared for you</p>
+                </div>
+                <div class="events-cards flex-group">
+                    <div class="event-card">
+                        <div class="card-head flex-group">
+                            <div class="card-image" style="background-image: url('./icons/microphone.png');"> 
+                            </div>
+                            <p class="card-title">Music</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-body-text">Super Junior World Tour - Super Show 9 : Road in Alappuzha</p>
+                            <p class="card-body-detail">17 Sep 22 - South Tangering</p>
+                        </div>
+                        <div class="card-footer flex-group">
+                            <p class="card-price">₹5000</p>
+                            <p class="card-footer-text">Availabe</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-head flex-group">
+                            <div class="card-image" style="background-image: url('./icons/flag.png');"> 
+                            </div>
+                            <p class="card-title">Sports</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-body-text">Super Junior World Tour - Super Show 9 : Road in Alappuzha</p>
+                            <p class="card-body-detail">17 Sep 22 - South Tangering</p>
+                        </div>
+                        <div class="card-footer flex-group">
+                            <p class="card-price">₹5000</p>
+                            <p class="card-footer-text">Availabe</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-head flex-group">
+                            <div class="card-image" style="background-image: url('./icons/exhibition.png');"> 
+                            </div>
+                            <p class="card-title">Exhibition</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-body-text">Super Junior World Tour - Super Show 9 : Road in Alappuzha</p>
+                            <p class="card-body-detail">17 Sep 22 - South Tangering</p>
+                        </div>
+                        <div class="card-footer flex-group">
+                            <p class="card-price">₹5000</p>
+                            <p class="card-footer-text">Availabe</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-head flex-group">
+                            <div class="card-image" style="background-image: url('./icons/standup-comedy.png');"> 
+                            </div>
+                            <p class="card-title">Comedy</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-body-text">Super Junior World Tour - Super Show 9 : Road in Alappuzha</p>
+                            <p class="card-body-detail">17 Sep 22 - South Tangering</p>
+                        </div>
+                        <div class="card-footer flex-group">
+                            <p class="card-price">₹5000</p>
+                            <p class="card-footer-text">Availabe</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-head flex-group">
+                            <div class="card-image" style="background-image: url('./icons/ticket-office.png');"> 
+                            </div>
+                            <p class="card-title">Show</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-body-text">Super Junior World Tour - Super Show 9 : Road in Alappuzha</p>
+                            <p class="card-body-detail">17 Sep 22 - South Tangering</p>
+                        </div>
+                        <div class="card-footer flex-group">
+                            <p class="card-price">₹5000</p>
+                            <p class="card-footer-text">Availabe</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-head flex-group">
+                            <div class="card-image" style="background-image: url('./icons/tv.png');"> 
+                            </div>
+                            <p class="card-title">Movies</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-body-text">Super Junior World Tour - Super Show 9 : Road in Alappuzha</p>
+                            <p class="card-body-detail">17 Sep 22 - South Tangering</p>
+                        </div>
+                        <div class="card-footer flex-group">
+                            <p class="card-price">₹5000</p>
+                            <p class="card-footer-text">Availabe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Events  -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            
+            <div class="footer-head flex-group">
+                <p class="logo">KeralaTourism.com</p>
+                <form class="newsletter flex-group">
+                    <p class="newsletter-title">Monthly digest of the latest news, articles, and resources</p>
+                    <input type="text" id="newsletter-email" placeholder="Enter your email">
+                    <button class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <div class="footer-main flex-group">
+                <div class="social-media grid">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+
+                <div class="site-map flex-group">
+                    <div class="top-destination grid">
+                        <h4>Top Destination</h4>
+                        <a href="#">Kovalam</a>
+                        <a href="#">Alleppey</a>
+                        <a href="#">Wayanad</a>
+                        <a href="#">Munnar</a>
+                    </div>
+                    <div class="pages grid">
+                        <h4>Pages</h4>
+                        <a href="#">Home</a>
+                        <a href="./pages/stays.html">Stays</a>
+                        <a href="./pages/places.html">Places</a>
+                        <a href="#">Districts</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyrights">
+                <span>Copyright © 2023 Kerala Tourism. All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+</html>

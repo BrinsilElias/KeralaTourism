@@ -1,0 +1,129 @@
+@import url("../global.css");
+
+/* --------------- Staycation ------------------ */
+.staycation {
+    padding-block: 4rem;
+    background-color: var(--clr-background-100);
+}
+
+.staycation-text > * {
+    margin-block: 1rem;
+}
+
+.stays-search-box {
+    width: 530px;
+    padding: 0.5em 1em;
+    border-radius: 100vmax;
+    border: 1px var(--clr-neutral-400) solid;
+    box-shadow: 2px 4px 5px var(--clr-neutral-400);
+    gap: 1rem;
+}
+
+.stays-search-box input {
+    border: none;
+    background-color: var(--clr-background-100);
+    width: 7rem;
+    padding: 0 1rem;
+    border-right: 1px var(--clr-neutral-400) solid;
+}
+
+.staycation-filter {
+    margin-block: 3rem;
+    justify-content: space-between;
+}
+
+.staycation-cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product__card {
+    margin-block: 1rem;
+    max-width: 20rem;
+    background-color: var(--clr-background-100);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 4px 5px var(--clr-neutral-400);
+}
+
+.product__card-img {
+    height: 15rem;
+    background-color: var(--clr-neutral-400);
+    background-size: cover;
+    background-position: center;
+}
+
+.product__card-body {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1em 1.5em;
+}
+
+.card-title {
+    color: var(--clr-neutral-900);
+    font-weight: var(--fw-sb);
+    font-size: 0.9rem;
+}
+
+.distance, 
+.review {
+    color: var(--clr-neutral-700);
+    font-weight: var(--fw-md);
+    font-size: 0.9rem;
+}
+
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 1rem;
+    border-bottom: 1px var(--clr-neutral-400) solid;
+}
+
+.tag {
+    background-color: var(--clr-background-300);
+    width: fit-content;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.4rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag > p {
+    font-size: 0.8rem;
+    font-weight: var(--fw-sb);
+}
+
+svg {
+    width: 14px;
+    aspect-ratio: 1;
+    color: var(--clr-neutral-700);
+    stroke-width: 2px;
+}
+
+.tag-number {
+    font-weight: var(--fw-md);
+}
+
+.tag-text {
+    color: var(--clr-neutral-700);
+}
+
+.card-price {
+    color: var(--clr-primary-500);
+    font-weight: var(--fw-sb);
+    font-size: 0.9rem;
+}
+
+.rating {
+    font-weight: var(--fw-sb);
+    font-size: 0.8rem;
+}
+
+.rating-icon svg {
+    color: orange;
+    width: 16px;
+    aspect-ratio: 1;
+}
+
+/* -------------------------------------- */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Events Cards</title>
+
+    <style>
+        :root {
+                --clr-primary-500: hsla(217, 96%, 56%, 1);
+    
+                --clr-background-100: hsla(0, 0%, 100%, 1);
+                --clr-background-200: hsla(210, 11%, 96%, 1);
+                --clr-background-300: hsl(180, 20%, 97%, 1);
+                
+                --clr-neutral-400: hsla(0, 0%, 93%, 1);
+                --clr-neutral-700: hsla(205, 5%, 49%, 1);
+                --clr-neutral-900: hsla(210, 9%, 13%, 1);
+                
+                --fw-rg: 400;
+                --fw-md: 500;
+                --fw-sb: 600;
+                --fw-bd: 700;
+            }
+    
+            /*
+                1. Use a more-intuitive box-sizing model.
+            */
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            /*
+                2. Remove default margin
+            */
+            * {
+                margin: 0;
+            }
+            /*
+                3. Allow percentage-based heights in the application
+            */
+            html{
+                height: 100vh;
+            } 
+            
+            body {
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--clr-background-200);
+                height: 100vh;
+            }
+
+            .flex-group {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .event-card {
+                width: 20rem;
+                background-color: var(--clr-background-100);
+                padding: 1rem 1.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .card-head {
+                width: fit-content;
+                gap: 0.5rem;
+            }
+
+            .card-image {
+                width: 3rem;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background-color: var(--clr-neutral-400);
+            }
+
+            .card-title {
+                font-size: 1rem;
+                font-weight: var(--fw-sb);
+            }
+
+            .card-body {
+                padding-block: 0.8rem;
+                margin-block: 0.5rem;
+                border-bottom: 1px var(--clr-neutral-400) solid;
+            }
+
+            .card-body-detail {
+                color: var(--clr-neutral-700);
+                margin-top: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .card-price {
+                font-size: 0.9rem;
+                font-weight: var(--fw-md);
+            }
+
+            .card-footer-text {
+                font-size: 0.9rem;
+                font-weight: var(--fw-md);
+                color: var(--clr-primary-500);
+            }
+    </style>
+</head>
+<body>
+    <div class="event-card">
+        <div class="card-head flex-group">
+            <div class="card-image"> 
+            </div>
+            <p class="card-title">Music</p>
+        </div>
+        <div class="card-body">
+            <p class="card-body-text">Super Junior World Tour - Super Show 9 : Road in Jakarta</p>
+            <p class="card-body-detail">17 Sep 22 - South Tangering</p>
+        </div>
+        <div class="card-footer flex-group">
+            <p class="card-price">₹5000</p>
+            <p class="card-footer-text">Availabe</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import url("../global.css");
+
+
+/* ----------- Top Destinations ------------- */
+.places {
+    padding-block: 1em;
+    background-color: var(--clr-background-100);
+}
+
+.top__destinations {
+    padding-block: 4rem;
+    background-color: var(--clr-background-100);
+}
+
+.top__destinations-text > * {
+    margin-block: 1rem;
+    text-align: center;
+}
+
+.top__destinations-images {
+    margin-block: 4rem;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+
+.top__destinations-cards {
+    margin-bottom: 1rem;
+}
+
+.top__destinations-card-image {
+    width: 15rem;
+    height: 20rem;
+    background-color: var(--clr-neutral-400);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.5rem;
+}
+
+/* ------------------------------------------- */
