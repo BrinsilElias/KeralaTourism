@@ -5,12 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
     <!-- Styles -->
-    <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="../styles/signup.css">
 
     <!-- Google Fonts -->
@@ -21,128 +16,45 @@
     <title>Kerala Tourism Sign Up</title>
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <nav class="container flex-group">
-            <p class="logo">KeralaTourism.com</p>
-            
-            <div class="nav-items flex-group">
-                <a href="../index.html">Home</a>
-                <a href="./stays.html">Stays</a>
-                <a href="./places.html">Places</a>
+    <div class="cards flex">
+        <!-- Sign Up -->
+        <div class="card">
+            <div class="form-header border-btm grid">
+                <h1>Sign Up</h1>
+                <button class="btn btn-secondary" type="button" data-icon="google-icon">Sign up with Google</button>
             </div>
-
-            <div class="btn-group">
-                <a class="btn btn-primary" href="./signup.html">Sign Up</a>
-                <a class="btn" href="./login.html">Log In</a>
-            </div>
-        </nav>
-    </header>
-    <!-- Header -->
-
-    <!-- Main -->
-    <main>
-        <div class="signup flex-group">
-            <div class="signup-image flex-group">
-                <div class="frosted-glass">
-                    <h1 style="color: var(--clr-background-100);">Discover the magic of <br><span style="color: var(--clr-neutral-900);">Kerala</span> - God's own country</h1>
-                </div>
-            </div>
-            <div class="signup-form">
-                <h3>SignUp</h3>
-                <form>
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                      <input type="text" id="form2Example1" class="form-control" />
-                      <label class="form-label" for="form2Example1">Name</label>
+            <div class="form-body border-btm">
+                <form class="grid">
+                    <div class="wrapper grid">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
                     </div>
-                    
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form2Example1" class="form-control" />
-                      <label class="form-label" for="form2Example1">Email address</label>
+                    <div class="wrapper grid">
+                        <label for="email">Email</label>
+                        <input type="text" id="signup-email" placeholder="example@mail.com">
                     </div>
-                  
-                    <!-- Password input -->
-                    <div class="form-outline mb-4">
-                      <input type="password" id="form2Example2" class="form-control" />
-                      <label class="form-label" for="form2Example2">Password</label>
-                    </div>
-                  
-                    <!-- 2 column grid layout for inline styling -->
-                    <div class="row mb-4">
-                      <div class="col d-flex justify-content-center">
-                        <!-- Checkbox -->
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                          <label class="form-check-label" for="form2Example31"> Remember me </label>
+                    <div class="wrapper grid">
+                        <label for="password">Password</label>
+                        <input type="password" id="signup-password" placeholder="at least 8 characters">
+                        <span class="strength">Strength</span>
+                        <div class="password-strenght flex">
+                            <div id="bar1" class="indicator"></div>
+                            <div id="bar2" class="indicator"></div>
+                            <div id="bar3" class="indicator"></div>
+                            <div id="bar4" class="indicator"></div>
                         </div>
-                      </div>
-                  
-                      <div class="col">
-                        <!-- Simple link -->
-                        <a href="#!">Forgot password?</a>
-                      </div>
                     </div>
-                  
-                    <!-- Submit button -->
-                    <button type="button" class="btn btn-primary btn-block mb-4">Sign Up</button>
-                  
-                    <!-- Register buttons -->
-                    <div class="text-center">
-                      <p>Not a member? <a href="#!">SignUp</a></p>
-                    </div>
-                  </form>
-            </div>
-        </div>
-    </main>
-    </main>
-    <!-- Main -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            
-            <div class="footer-head flex-group">
-                <p class="logo">KeralaTourism.com</p>
-                <form class="newsletter flex-group">
-                    <p class="newsletter-title">Monthly digest of the latest news, articles, and resources</p>
-                    <input type="text" id="newsletter-email" placeholder="Enter your email">
-                    <button class="btn btn-primary">Submit</button>
+                    <button class="btn btn-primary" id="signup-button" type="submit">Sign up</button>
                 </form>
             </div>
-
-            <div class="footer-main flex-group">
-                <div class="social-media grid">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+            <div class="form-footer">
+                <p>Already have an account?</p>
+                <div>
+                    <a href="#">Log In</a>
                 </div>
-
-                <div class="site-map flex-group">
-                    <div class="top-destination grid">
-                        <h4>Top Destination</h4>
-                        <a href="#">Kovalam</a>
-                        <a href="#">Alleppey</a>
-                        <a href="#">Wayanad</a>
-                        <a href="#">Munnar</a>
-                    </div>
-                    <div class="pages grid">
-                        <h4>Pages</h4>
-                        <a href="../index.html">Home</a>
-                        <a href="./stays.html">Stays</a>
-                        <a href="./places.html">Places</a>
-                        <a href="#">Districts</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-copyrights">
-                <span>Copyright © 2023 Kerala Tourism. All rights reserved</span>
             </div>
         </div>
-    </footer>
-    <!-- Footer -->
-    
+        <!-- Sign Up -->
+    </div>
 </body>
 </html>
