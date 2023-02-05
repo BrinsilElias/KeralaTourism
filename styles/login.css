@@ -161,9 +161,22 @@ a {
 
 body {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     justify-content: center;
     align-items: center;
+}
+
+.form-message-banner {
+    padding: 0.5rem 2rem;
+    border-radius: 0.4rem;
+}
+
+.form-message-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: var(--fw-sb);
+    color: var(--clr-background-card);
 }
 
 .cards {
@@ -211,8 +224,7 @@ textarea:focus, input:focus{
     justify-content: space-between;
 }
 
-.strength {
-    margin-block-start: 0.8rem;
+.sub-text {
     font-size: 0.8rem;
     font-weight: var(--fw-md);
     color: var(--clr-text-light);
@@ -231,12 +243,16 @@ textarea:focus, input:focus{
 }
 
 /* Form Validation */
-.valid {
+.invalid {
+    color: var(--clr-invalid);
+}
+
+.valid-outline {
     border: 1px var(--clr-valid) solid;
     box-shadow: hsla(142, 71%, 45%, 0.2) 0px 2px 8px 0px;
 }
 
-.invalid {
+.invalid-outline {
     border: 1px var(--clr-invalid) solid;
     box-shadow: hsla(0, 72%, 51%, 0.2) 0px 2px 8px 0px;
 }
@@ -246,5 +262,13 @@ textarea:focus, input:focus{
     box-shadow: hsla(142, 71%, 45%, 0.4) 0px 2px 10px 0px;
 }
 
+.banner-valid {
+    background-color: var(--clr-valid);
+    box-shadow: hsla(142, 71%, 45%, 0.4) 0px 2px 10px 0px;
+}
 
+.banner-invalid {
+    background-color: var(--clr-invalid);
+    box-shadow: hsla(0, 72%, 51%, 0.2) 0px 2px 8px 0px;
+}
 

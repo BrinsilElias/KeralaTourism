@@ -16,7 +16,51 @@
     <title>Kerala Tourism Log In</title>
 </head>
 <body>
+
+    <div id="banner-message"></div>
+
     <div class="cards flex">
+
+        <!-- Sign Up -->
+        <div class="card" hidden>
+            <div class="form-header border-btm grid">
+                <h1>Sign Up</h1>
+                <button class="btn btn-secondary" type="button" data-icon="google-icon">Sign up with Google</button>
+            </div>
+            <div class="form-body border-btm">
+                <form class="grid">
+                    <div id="name-wrapper" class="wrapper grid">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+                    <div id="email-wrapper" class="wrapper grid">
+                        <label for="email">Email</label>
+                        <input type="text" id="signup-email" placeholder="example@mail.com">
+                    </div>
+                    <div class="wrapper grid">
+                        <label for="password">Password</label>
+                        <input type="password" id="signup-password" placeholder="at least 8 characters">
+                        <span class="sub-text">Strength</span>
+                        <div class="password-strenght flex">
+                            <div id="bar1" class="indicator"></div>
+                            <div id="bar2" class="indicator"></div>
+                            <div id="bar3" class="indicator"></div>
+                            <div id="bar4" class="indicator"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="signup-button" type="submit">Sign up</button>
+                </form>
+            </div>
+            <div class="form-footer">
+                <p>Already have an account?</p>
+                <div>
+                    <a href="#">Log In</a>
+                </div>
+            </div>
+        </div>
+        <!-- Sign Up -->
+
+
         <!-- Log In -->
         <div class="card">
             <div class="form-header border-btm grid">
@@ -25,7 +69,7 @@
             </div>
             <div class="form-body border-btm">
                 <form class="grid">
-                    <div class="wrapper grid">
+                    <div id="login-wrapper" class="wrapper grid">
                         <label for="email">Email</label>
                         <input type="text" id="login-email" placeholder="example@mail.com">
                     </div>
@@ -48,5 +92,7 @@
         </div>
         <!-- Log In -->
     </div>
+
+    <script src="../script/app.js"></script>
 </body>
 </html>

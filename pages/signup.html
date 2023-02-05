@@ -16,6 +16,8 @@
     <title>Kerala Tourism Sign Up</title>
 </head>
 <body>
+    <div id="banner-message"></div>
+
     <div class="cards flex">
         <!-- Sign Up -->
         <div class="card">
@@ -25,18 +27,18 @@
             </div>
             <div class="form-body border-btm">
                 <form class="grid">
-                    <div class="wrapper grid">
+                    <div id="name-wrapper" class="wrapper grid">
                         <label for="name">Name</label>
                         <input type="text" id="name" placeholder="John Doe">
                     </div>
-                    <div class="wrapper grid">
+                    <div id="email-wrapper" class="wrapper grid">
                         <label for="email">Email</label>
                         <input type="text" id="signup-email" placeholder="example@mail.com">
                     </div>
                     <div class="wrapper grid">
                         <label for="password">Password</label>
                         <input type="password" id="signup-password" placeholder="at least 8 characters">
-                        <span class="strength">Strength</span>
+                        <span class="sub-text">Strength</span>
                         <div class="password-strenght flex">
                             <div id="bar1" class="indicator"></div>
                             <div id="bar2" class="indicator"></div>
@@ -55,6 +57,39 @@
             </div>
         </div>
         <!-- Sign Up -->
+
+         <!-- Log In -->
+         <div class="card" hidden>
+            <div class="form-header border-btm grid">
+                <h1>Log In</h1>
+                <button class="btn btn-secondary" type="button" data-icon="google-icon">Log in with Google</button>
+            </div>
+            <div class="form-body border-btm">
+                <form class="grid">
+                    <div id="login-wrapper" class="wrapper grid">
+                        <label for="email">Email</label>
+                        <input type="text" id="login-email" placeholder="example@mail.com">
+                    </div>
+                    <div class="wrapper grid">
+                        <label for="password">Password</label>
+                        <input type="password" id="login-password" placeholder="Password">
+                    </div>
+                    <button class="btn btn-primary" id="login-button" type="submit">Log in</button>
+                    <div class="wrapper" style="text-align: center;">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="form-footer">
+                <p>Don't have an account?</p>
+                <div>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <!-- Log In -->
     </div>
+
+    <script src="../script/app.js"></script>
 </body>
 </html>
