@@ -4,6 +4,7 @@
 const userName = document.querySelector('#name');
 const userEmail = document.querySelector('#signup-email');
 const password = document.querySelector('#signup-password');
+const phoneNumber = document.querySelector('#signup-phone')
 const loginEmail = document.querySelector('#login-email');
 const loginPassword = document.querySelector('#login-password');
 const banner = document.querySelector('#banner-message')
@@ -33,13 +34,13 @@ messageEmail.innerText = 'Enter your complete email id with .com'
 messageValidSubmit.innerHTML = `<p class='form-message-text'>Submit Success</p>`
 messageInvalidSubmit.innerHTML = `<p class='form-message-text'>Submit Failed</p>`
 
-
 // Event listeners
 signupButton.addEventListener('click', event => {
-    if(!(userName.value, userEmail.value, password.value)) {
+    if(!(userName.value, userEmail.value, password.value, phoneNumber.value)) {
         userName.classList.add('invalid-outline');
         userEmail.classList.add('invalid-outline');
         password.classList.add('invalid-outline');
+        phoneNumber.classList.add('invalid-outline')
         banner.appendChild(messageInvalidSubmit)
     }
 
@@ -62,6 +63,7 @@ loginButton.addEventListener('click', event => {
 })
 userName.addEventListener('keyup', isValidName);
 userEmail.addEventListener('keyup', isValidEmail);
+phoneNumber.addEventListener('keyup', isValidNumber);
 password.addEventListener('keyup', checkpassword);
 loginEmail.addEventListener('keyup', isValidLoginEmail);
 
@@ -96,6 +98,20 @@ function isValidEmail() {
         userEmail.classList.remove('valid-outline');
         document.getElementById('email-wrapper').appendChild(messageEmail);
     }
+}
+
+function isValidNumber() {
+  const re = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
+  var input = this.value;
+  if(re.test(input.toLowerCase())) {
+    phoneNumber.classList.add('valid-outline');
+    phoneNumber.classList.remove('invalid-outline');
+  }
+
+  else {
+    phoneNumber.classList.add('invalid-outline');
+    phoneNumber.classList.remove('valid-outline');
+  }
 }
 
 function isValidLoginEmail() {
