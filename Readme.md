@@ -25,7 +25,7 @@ KeralaTourism.com is a complete redesign of Kerala Tourism website using HTML an
 
 
 ##  Running the project
-Visit this link: [KeralaTourism.com](brinsilelias.github.io/KeralaTourism/) and enjoy the magic of god's own country.
+Visit this link: [KeralaTourism.com](https://brinsilelias.github.io/KeralaTourism/) and enjoy the magic of god's own country.
 
 ---
 
